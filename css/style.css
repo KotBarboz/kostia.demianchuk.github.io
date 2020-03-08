@@ -1500,6 +1500,21 @@ ul.portfolio-image li .desc {
 
 }
 
+.content-centering{
+    display:flex;
+    justify-content: center; /*центрируем элемент по горизонтали */
+    align-items: center; /* и вертикали */
+    width: 500px; /* задали размеры блоку-родителю */
+    height: 500px;
+    overflow: hidden; /* если элемент больше блока-родителя – обрезаем лишнее */
+}
+
+.block-decor{
+    background-color: #ccc;
+    margin: 8px;
+    float: left;
+}
+
 img {
     vertical-align: middle;
 }
@@ -1692,4 +1707,25 @@ li {
         -moz-transform: perspective(136px) rotateY(180deg);
         opacity: 0;
     }
+}
+
+
+@media screen and (max-width: 768px) {
+    .round {
+        margin: 64px 0 0 -167px;
+        border-radius: 0;
+    }
+
+    .owl-carousel2 {
+        margin-left: 5rem;
+    }
+
+    #skill {
+        margin-top: 20rem;
+    }
+
+    .icon-use {
+        padding-top: 1rem;
+    }
+
 }
